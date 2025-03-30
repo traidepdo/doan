@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Storage;
 
 class VideoController extends Controller
 {
+    
+    public function dashboard()
+    {
+        return view('admin.dashboard'); // Đảm bảo bạn có file `dashboard.blade.php` trong `resources/views/admin/`
+    }
+    
     // Hiển thị danh sách video
     public function index()
     {

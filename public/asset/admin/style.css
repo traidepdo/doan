@@ -286,6 +286,9 @@ li {
 .admin-content .admin-main h1 {
     font-size: 30px;
     font-weight: 500;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 .admin-content .admin-main table {
@@ -433,4 +436,28 @@ td {
     border-radius: 8px;
     text-align: center;
     color: #777;
+}
+
+
+/* dashboard */
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
